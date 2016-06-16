@@ -62,7 +62,8 @@ angular.module('angular-virtual-keyboard', [])
 	},
 	relative: true,
 	sizeAdj: true,
-	customClass: false
+	customClass: false,
+	trim: true
 })
 .service('ngVirtualKeyboardService', ['VKI_CONFIG', function(VKI_CONFIG) {
 	/*globals VKI */
@@ -75,6 +76,7 @@ angular.module('angular-virtual-keyboard', [])
 			config.keyCenter = config.keyCenter || VKI_CONFIG.keyCenter;
 			config.sizeAdj = config.sizeAdj === false ? false : VKI_CONFIG.sizeAdj;
 			config.customClass = config.customClass || VKI_CONFIG.customClass;
+			config.trim = config.trim || VKI_CONFIG.trim;
 
 			var vki = new VKI(config, VKI_CONFIG.layout, VKI_CONFIG.deadkey, inputCallback);
 			vki.attachVki(element);

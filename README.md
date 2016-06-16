@@ -80,12 +80,13 @@ The ``ng-virtual-keyboard`` could receive an array with the configurations that 
  - __VKI Version__ ``showVersion`` To show the VKI-core based version. _Default: false_
  - __Imageless mode__ ``imageURI`` By default the keyboard will be show on input field focus. Pass a image URI to add a clickable image next to inputs and replace the on focus default behavior. _Default: false_
  - __Show in mobile__ ``showInMobile`` True to display the interface on mobiles devices. _Default: false_
- - __Foce position__ ``forcePosition`` Force to position the virtual keyborad above (_use ``"top"``_) or below (_use ``"bottom"``_) the input field. Use ``false`` to let the directive choose the better position. _Default: false_
+ - __Force position__ ``forcePosition`` Force to position the virtual keyborad above (_use ``"top"``_) or below (_use ``"bottom"``_) the input field. Use ``false`` to let the directive choose the better position. _Default: false_
  - __Enter callback__ ``enterSubmit`` Define a callback function for the enter key. Use ~~true to submit forms when Enter is pressed or~~ a function to execute a custom function. _Default: false_ (See _[enterSubmit issues #5](https://github.com/the-darc/angular-virtual-keyboard/issues/5)_)
  - __Relative position__ ``relative`` Use ``true`` to position the keyboard next to the input, and ``false`` to place in the bottom of page. _Default: ``true``_
  - __Keyboard size control__ ``size`` Five sizes based on font-size have been pre-programmed: 13px, 16px (default), 20px, 24px and 28px; corresponding to the sizes 1 to 5 respectively. _Default: 3_
  - __Adjust keyboard size__ ``sizeAdj`` Allow user to adjust keyboard size. _Default: ``true``_
  - __Custom CSS Class__ ``customClass`` A CSS class name to add in the first html element of the keyboard
+ - __Trim__ ``trim`` Determines if whitespace in the virtual keyboard is trimmed. _Default: ``true``_
 
 ### Example of use
 
